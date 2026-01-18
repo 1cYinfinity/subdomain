@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subdomain Takeover Demo</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: #111;
+      color: #00ff88;
+      text-align: center;
+      padding: 80px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #ff5555;
+    }
+    .box {
+      border: 2px solid #00ff88;
+      border-radius: 8px;
+      display: inline-block;
+      padding: 20px 40px;
+      margin-top: 40px;
+      background: #1a1a1a;
+      box-shadow: 0 0 20px #00ff88;
+    }
+    p {
+      color: #ccc;
+      font-size: 1.2em;
+    }
+    .note {
+      margin-top: 40px;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Subdomain Takeover Demonstration</h1>
+  <div class="box">
+    <p><strong>✅ This subdomain is under my control.</strong></p>
+    <p>The DNS record still points here, but the original service was deleted.</p>
+  </div>
+  <div class="note">
+    <p>This page is for educational purposes only — demonstrating what happens when a dangling CNAME can be claimed by someone else.</p>
+  </div>
+</body>
+</html>
